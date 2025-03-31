@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Blog</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+    }
+    
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      border-bottom: #e8491d 3px solid;
+    }
+    
+    header h1 {
+      float: left;
+      margin-left: 20px;
+    }
+    
+    nav {
+      float: right;
+      margin-right: 20px;
+    }
+    
+    nav ul {
+      list-style: none;
+    }
+    
+    nav li {
+      display: inline;
+      margin-left: 15px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    
+    #showcase {
+      background: url('blog-bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      height: 300px;
+      text-align: center;
+      padding-top: 100px;
+    }
+    
+    #showcase h1 {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+    
+    #showcase p {
+      font-size: 20px;
+    }
+    
+    article {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    article h2 {
+      margin-bottom: 10px;
+    }
+    
+    article small {
+      color: #777;
+    }
+    
+    article a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #e8491d;
+      text-decoration: none;
+    }
+    
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
+    /* Clearfix */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="clearfix">
+    <div class="container">
+      <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Showcase Section -->
+  <section id="showcase">
+    <div class="container">
+      <h1>Welcome to my Blog</h1>
+      <p>Sharing my thoughts and ideas</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts -->
+  <div class="container">
+    <article>
+      <h2>Blog Post Title</h2>
+      <small>Posted on March 30, 2025 by Author</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ex eu orci aliquet feugiat. Nulla facilisi. Phasellus volutpat, nulla at ullamcorper consequat, sapien urna tristique dui, a accumsan libero elit eget nunc.</p>
+      <a href="#">Read More</a>
+    </article>
+    
+    <article>
+      <h2>Another Post</h2>
+      <small>Posted on March 29, 2025 by Author</small>
+      <p>Curabitur at quam vitae odio vulputate tincidunt. Praesent ac ante ac urna sollicitudin commodo. Sed sit amet justo et sapien cursus convallis. Aenean venenatis urna vitae urna luctus, in maximus mauris dictum.</p>
+      <a href="#">Read More</a>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Blog</p>
+  </footer>
+</body>
+</html>
